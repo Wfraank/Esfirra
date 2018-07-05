@@ -1,0 +1,93 @@
+<!DOCTYPE html> <!--   -->
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="description" content="Sistema de controle de acesso de torcedores a estádios de futebol"/>
+	<meta name="keywords" content="AoTorcedor, controle de acesso, torcedores, estádios, futebol"/>
+	<meta name="author" content="ESFIRRA"/>
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="CSS Normalize.css"/>
+	<link rel="stylesheet" type="text/css" href="Reutilizaveis.css"/>
+	<link rel="stylesheet" type="text/css" href="Grid_user.css"/>
+	<link rel="stylesheet" type="text/css" href="style_user.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<title>AoTorcedor</title>
+	<link rel="shortcut icon" href="logo/mao.ico"/>
+</head>
+<body>
+	<div class="superlinha traço">
+	</div>
+	<div class="superlinha header">
+		<div class="menu">
+			<nav>
+				<ul class="inline sem-marcador sem-padding">
+					<li><a class="pontos" href="#">1000/1000pt</a></li>
+					<li><a href="#">Menu 02</a></li>
+					<li><a href="proximos.html">Próximos jogos</a></li>
+					<li><a href="saiba_mais.html">Saiba Mais</a></li>
+					<li><a href="index.html">Sair</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<div class="superlinha logo">
+		<img src="img/Logo.png" alt="logo"/>
+	</div>
+	<div class="linha cards cards1">
+		<div class="coluna card">
+			<h3>Pontuação</h3><br>
+			<p>Uma maior pontuação garante brindes, descontos e muitas outras vantagens!</p>
+			<div id="chartContainer" style="height: 50%; width: 100%;"></div>
+			<button class="btn invisible" id="backButton">< Back</button>
+			<script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+			<script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+		</div>
+		<div class="coluna card">
+			<h3>Ainda não cadastrou a sua biometria?</h3><br>
+			<p>Retire seu token e cadastre no dia do jogo!</p>
+			<div class="h_token_1">
+				<img src="img/proximo.png" alt="seta" class="token"/>
+			</div>
+			<div class="h_token_2">
+				<div class="token2">
+					<p>#FD546FD6</p>
+				</div>
+				<p class="token">Válido por 48hrs a partir do momento da retirada.</p>
+			</div>
+		</div>
+	</div>
+	<div class="linha cards cards2">
+		<div class="coluna card">
+			<h3>Indicação de infração</h3><br>
+			<p>Aconteceu algo de errado hoje?</p>
+			<form method="POST" class="" action="indicacao.html">
+				<input type="text" name="email" id="email" placeholder="Endereço de Email" class="in"/>
+				<input type="text" name="cidade" id="cidade" placeholder="Cidade" class="in"/>
+				<input type="submit" name="continuar" href="indicacao.html" class="botao" value="Indique agora!"/>
+			</form>
+		</div>
+		<div class="coluna card">
+			<h3>Compra de ingressos</h3><br>
+			<p>Veja agora os jogos e lugares disponíveis!</p>
+			<form action="" class="">
+				<input type="submit" name="continuar" class="botao margin" value="Saber Mais"/>
+			</form>
+		</div>
+	</div>
+	<div class="seta">
+		<img src="img/seta.png" alt="seta"/>
+	</div>
+	<div class="footer superlinha">
+		<span>&copy; 2018 - AoTorcedor</span>
+		<a href="#" class="fa fa-facebook"></a>
+		<a href="#" class="fa fa-twitter"></a>
+		<br>
+		<p>Dúvidas? Ligue 0800-887-0201</p>
+		<a href="#"><p>Termos de uso</p></a>
+		<a href="#"><p>Declaração de privacidade</p></a>
+	</div>
+</body>
+</html>

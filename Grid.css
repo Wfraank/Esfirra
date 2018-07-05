@@ -1,0 +1,101 @@
+/* Grid 960px */
+
+@media all and (max-width: 700px) {
+	.linha{
+		width: 98%;
+		margin: 0 1%;
+		overflow: auto;
+		padding: 0 0;
+	}
+	.sumir{
+		display:none;
+	}
+	.ampliar{
+		width: 45%;
+	}
+}
+
+@media all and (min-width: 700px) and (max-width: 1024px) {
+	.linha{
+		width: 94%;
+		margin: 0 3%;
+		overflow: auto;
+		padding: 0 0;
+	}
+	.ampliar, .sumir{
+		width: 28%;
+	}
+}
+
+@media all and (min-width: 1024px) and (max-width: 1200px) {
+	.linha{
+		width: 86%;
+		margin: 0 7%;
+		overflow: auto;
+		padding: 0 0;
+	}
+	.ampliar, .sumir{
+		width: 28%;
+	}
+}
+
+@media all and (min-width: 1200px) and (max-width: 2160px) {
+	.linha{
+		width: 70%;
+		margin: 0 15%;
+		overflow: auto;
+		padding: 0 0;
+	}
+	.ampliar, .sumir{
+		width: 28%;
+	}
+}
+
+.superlinha{
+	width: 100%;
+}
+
+.coluna{
+	padding: 0 1%;
+	float: left;
+}
+
+.col1{
+	width: 8%;
+}
+
+.col2{
+	width: 18%;
+}
+
+.col3{
+	width: 28%;
+}
+
+.col4{
+	width: 38%;
+}
+
+.col5{
+	width: 48%;
+}
+
+.col6{
+	width: 58%;
+}
+
+.col7{
+	width: 68%;
+}
+
+.col8{
+	width: 78%;
+}
+
+.col9{
+	width: 88%;
+}
+
+.col10{
+	width: 98%;
+}

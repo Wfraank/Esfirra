@@ -1,0 +1,54 @@
+/*Layout do Site*/
+
+body{
+	height: 100vh;
+	background-image: url("img/soccer.jpg");
+}
+
+.logo{
+	height: 15vh;
+}
+
+.logo img{
+	display: block;
+    height: 15vh;
+    margin: 0 auto;
+    width: auto;
+}
+
+.cards{
+	height: 73vh;
+	text-align: center;
+}
+
+.card{
+	height: 60vh;
+	margin: 8vh 1.5% 5vh 1.5%;
+	background: rgba(242,245,169,0.8);
+	border-radius: 1rem;
+}
+
+.card form input.in{
+	display: block;
+	width: 100%;
+	border-radius: .25rem;
+	background-color: #FFFFFF;
+	margin: 0.2vw 0;
+	border: 1px solid transparent;
+	line-height: 2;
+	color: #495057;
+	margin: 0.5vh 0;
+}
+
+.footer{
+	height: 8vh;
+	padding: 2vh 0;
+	text-align: center;
+	font-weight: 500;
+	background: rgba(11,11,59,0.4);
+}
+
+.footer p{
+	display: inline;
+	margin-right: 3vw;
+}
