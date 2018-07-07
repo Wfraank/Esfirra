@@ -41,7 +41,7 @@ body{
 }
 
 .logo{
-	padding: 3vh 0;
+	padding: 3vh 0 2vh 0;
 	height: 14vh;
 }
 
@@ -58,7 +58,7 @@ body{
 }
 
 .card{
-	height: 46vh;
+	height: 47vh;
 	width: 98%;
 	margin: 3vh 0 1vh 0;
 	background: rgba(242,245,169,0.8);
@@ -98,11 +98,11 @@ body{
 	width: 99%;
 }
 
-.card form input.in1, .card form textarea.in1{
+.card form input.in1, .card form textarea.in1, .card form select.in1{
 	width: 49.4%;
 }
 
-.card form input.in2, .card form textarea.in2{
+.card form input.in2, .card form textarea.in2, .card form select.in2{
 	width: 24.4%;
 }
 
@@ -144,20 +144,10 @@ body{
 	display: none;
 }
 
-.label{
-	padding: 1vh 1vw;
-	display: inline;
-}
-
-.label{
-	padding: 1vh 1vw;
-	display: block;
-}
-
 .card img{
 	width: auto;
-	height: 10vh;
-	margin-top: 3vh;
+	height: 7vh;
+	margin-top: 2vh;
 	margin-right: 1vw;
 	display: inline-block;
 }

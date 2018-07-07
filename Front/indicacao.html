@@ -13,7 +13,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/cadastro.js"></script>
+	<script type="text/javascript" src="js/indicacao.js"></script>
 	<title>AoTorcedor</title>
 	<link rel="shortcut icon" href="logo/mao.ico"/>
 </head>
@@ -25,7 +25,7 @@
 			<nav>
 				<ul class="inline sem-marcador sem-padding">
 					<li><a class="pontos" href="#">1000/1000pt</a></li>
-					<li><a href="#">Menu 02</a></li>
+					<li><a href="validar.html">Validar Infrações</a></li>
 					<li><a href="proximos.html">Próximos jogos</a></li>
 					<li><a href="saiba_mais.html">Saiba Mais</a></li>
 					<li><a href="index.html">Sair</a></li>
@@ -43,6 +43,14 @@
 				<input type="Data" name="Data" id="Data" placeholder="Data da infração" class="in1"/>
 				<input type="text" name="Local" id="Local" placeholder="Local da infração, o estádio, o jogo..." class="in1"/>
 				<textarea name="mensagem" id="mensagem" placeholder="Explique aqui o que ocorreu..." class="in3"></textarea>
+				<label for="Grau_Infracao"><br><br>Qual é a gravidade da situação?</label>
+				<select name="Grau_Infracao" id="Grau_Infracao" class="in2">
+					<option value="1">Muito Leve</option>
+					<option value="2">Leve</option>
+					<option value="3">Mediana</option>
+					<option value="4">Séria</option>
+					<option value="5">Muito Séria</option>
+				</select>
 			</form>
 			<table>
   				<tr>

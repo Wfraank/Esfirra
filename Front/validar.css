@@ -1,0 +1,190 @@
+/*Layout do Site*/
+
+body{
+	height: 100vh;
+	background-image: url("img/futebol4.jpg");
+}
+
+.traço{
+	height: 1vh;
+	background: #08088A;
+}
+
+.header{
+	height: 6vh;
+	padding: 0 0;
+	background: rgba(11,11,59,0.4);
+}
+
+.menu{
+	display: inline-block;
+	text-transform: uppercase;
+	text-align: right;
+	font-size: 3vh;
+	float: right;
+	height: 100%;
+}
+
+.menu ul{
+	margin: 1.5vh 0 ;
+}
+
+.menu ul li a{
+	padding: 1.5vh 3vw 1.1vh 3vw;
+	border-radius: 0rem;
+	/*color: #ebebeb;*/
+	color: #FFFF00;
+}
+
+.menu ul li a:hover{
+	text-decoration: none;
+	background: #08088A;
+	color: #ebebeb;
+}
+
+.logo{
+	padding: 3vh 0;
+	height: 14vh;
+}
+
+.logo img{
+    height: 14vh;
+    width: auto;
+    display: block;
+	margin: 0 auto;
+}
+
+.cards{
+	height: 61vh;
+	text-align: center;
+}
+
+.card{
+	height: 50vh;
+	margin: 7vh 1.5% 4vh 1.5%;
+	width: 18%;
+	background: rgba(254,100,46,0.8);
+	border-radius: 1rem;
+}
+
+.card form input.in{
+	display: block;
+	width: 100%;
+	border-radius: .25rem;
+	background-color: #FFFFFF;
+	margin: 0.2vw 0;
+	border: 1px solid transparent;
+	line-height: 2;
+	color: #495057;
+	margin: 0.5vh 0;
+}
+
+.imgbola img{
+	height: 100%;
+	width: auto;
+	margin-left: 0;
+	float: left;
+}
+
+.footer{
+	height: 8vh;
+	padding: 2vh 0;
+	text-align: center;
+	font-weight: 500;
+	background: rgba(11,11,59,0.4);
+}
+
+.footer p{
+	display: inline;
+	margin-right: 3vw;
+}
+
+.footer p, .footer a, .footer span{
+	color: #FFFF00;
+}
+
+h4{
+	color:white;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.botao{
+	background: #0B0B61;
+	width: 100%;
+	height: 2.2vw;
+	border-radius: 0.2rem;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: inline-block;
+	border: none;
+}
+
+.validabot{
+	width: 45%;
+	height: 2.2vw;
+	border-radius: 0.2rem;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: inline-block;
+	border: none;
+}
+
+.val1{
+	background: green;
+	margin-right: 1%;
+}
+
+.val2{
+	background: red;
+	margin-left: 1%;
+}
+
+.sete, .setd{
+	width: 4%;
+	display: inline-block;
+	height: 50vh;
+	float: left;
+	margin: 7vh 0 4vh 0;
+}
+
+.sete img, .setd img{
+	width: 100%;
+	height: 10vh;
+	margin: 20vh 0;
+	cursor: pointer;
+}
+
+.infra{
+	width: 100%;
+	height: 2.2vw;
+	border-radius: 0.8rem;
+	color: #FFFFFF;
+	display: inline-block;
+	border: none;
+}
+
+.leve{
+	background: green;
+}
+
+.media{
+	background: yellow;
+}
+
+.seria{
+	background: red;
+}
+
+.validaC11, .validaC21, .validaC31, .validaC41, .validaC51, .validaC61, .validaC71, .validaC81{
+	margin-right: 2vw;
+	cursor: pointer;
+}
+
+.validaC12, .validaC22, .validaC32, .validaC42, .validaC52, .validaC62, .validaC72, .validaC82{
+	cursor: pointer;
+}
+
+.apareceC11, .apareceC21, .apareceC31, .apareceC41, .apareceC51, .apareceC61, .apareceC71, .apareceC81, .apareceC12, .apareceC22, .apareceC32, .apareceC42, .vapareceC52, .apareceC62, .apareceC72, .apareceC82{
+	padding-top: 10vh;
+}

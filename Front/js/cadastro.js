@@ -1,10 +1,8 @@
-
 $(function(){
 	var flag = 0;
 	$(".cad2").hide();
 	$(".cad3").hide();
 	$(".seta1 img").hide();
-
 	$(".seta2 img").click(function(){
 		if(flag == 0){
 			$(".cad1").hide();
