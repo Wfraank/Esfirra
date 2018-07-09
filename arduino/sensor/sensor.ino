@@ -28,7 +28,7 @@ SoftwareSerial mySerial(SENSOR_BIOMETRIC_PIN1, SENSOR_BIOMETRIC_PIN2);
 KNoTThing thing;
 Adafruit_Fingerprint finger = Adafruit_Fingerprint(&mySerial);
 
-uint8_t id = 0;
+uint8_t id;
 
 /*static int light_write(uint8_t *val)
 {
@@ -90,7 +90,7 @@ void loop()
     thing.run();
 }
 
-int leitura(uint8_t *val){
+static int leitura(int32_t *val, int32_t *mult){
   
     while (!  getFingerprintEnroll() );
     return 0;
