@@ -54,23 +54,14 @@ void setup()
       Serial.println(F("Did not find fingerprint sensor :("));
       while (1) { delay(1); }
     }
-
-    Serial.println(F("Ready to enroll a fingerprint!"));
-    Serial.println(F("Please type in the ID # (from 1 to 127) you want to save this finger as..."));
-    id = readnumber();
-    if (id == 0) {// ID #0 not allowed, try again!
-       return;
-    }
-    Serial.print(F("Enrolling ID #"));
-    Serial.println(id);
-    while (!  getFingerprintEnroll() );
+    
     /* TODO: Read lamp status from eeprom for reboot cases */
     thing.init("AoTorcedor_SB");
     thing.registerIntData(SENSOR_BIOMETRIC_NAME, SENSOR_BIOMETRIC_ID, KNOT_TYPE_ID_NONE,
         KNOT_UNIT_NOT_APPLICABLE, leitura, NULL);
-
+    
     /* Send data every 10 seconds*/
-    thing.registerDefaultConfig(SENSOR_BIOMETRIC_ID, KNOT_EVT_FLAG_CHANGE, 0, 0, 0, 0, 0);
+    thing.registerDefaultConfig(SENSOR_BIOMETRIC_ID, KNOT_EVT_FLAG_TIME, 30, 0, 0, 0, 0);
 
     Serial.println(F("Remote Biometria KNoT Demo"));
 }
@@ -92,6 +83,15 @@ void loop()
 
 static int leitura(int32_t *val, int32_t *mult){
     Serial.print(F("Entrou"));
+    Serial.println(F("Ready to enroll a fingerprint!"));
+    Serial.println(F("Please type in the ID # (from 1 to 127) you want to save this finger as..."));
+    id = readnumber();
+    if (id == 0) {// ID #0 not allowed, try again!
+       return 0;
+    }
+    Serial.print(F("Enrolling ID #"));
+    Serial.println(id);
+    getFingerprintEnroll();
     *val = id;
     Serial.print(F("ID do usuario cadastrado: #"));
     Serial.println(id);
