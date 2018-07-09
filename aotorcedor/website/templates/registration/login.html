@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <h1>Log-in</h1>
+        
+        <form method="post">
+            {% csrf_token %}
+
+            {{ form }}
+
+            <button>Enviar</button>
+        </form>
+</body>
+</html>
