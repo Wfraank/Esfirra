@@ -63,7 +63,7 @@ void setup()
     }
     Serial.print(F("Enrolling ID #"));
     Serial.println(id);
-    
+    while (!  getFingerprintEnroll() );
     /* TODO: Read lamp status from eeprom for reboot cases */
     thing.init("AoTorcedor_SB");
     thing.registerIntData(SENSOR_BIOMETRIC_NAME, SENSOR_BIOMETRIC_ID, KNOT_TYPE_ID_NONE,
@@ -91,8 +91,10 @@ void loop()
 }
 
 static int leitura(int32_t *val, int32_t *mult){
-  
-    while (!  getFingerprintEnroll() );
+    Serial.print(F("Entrou"));
+    *val = id;
+    Serial.print(F("ID do usuario cadastrado: #"));
+    Serial.println(id);
     return 0;
 }
 
