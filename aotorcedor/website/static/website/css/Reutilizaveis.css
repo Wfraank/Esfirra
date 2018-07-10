@@ -1,0 +1,121 @@
+/*Estilos reutilizavéis*/
+
+body{
+    -ms-overflow-style: none;  // IE 10+
+    overflow: -moz-scrollbars-none;  // Firefox
+}
+::-webkit-scrollbar { 
+    display: none;  // Safari and Chrome
+}
+
+body{
+	font-family: 'Roboto', sans-serif;	/* Google Fonts */
+	width: 100vw;
+	color: #333;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+a:link, a:active, a:visited{
+	color: #315e8a;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+html{
+	font-size: 1.2vw;
+}
+ 
+h1, h2, h3, h4, h5, h6{
+	font-weight: 500;
+	margin: 0.5vw 0;
+}
+
+h1{
+	font-size: 2.3vw;
+}
+
+h2{
+	font-size: 2.0vw;
+}
+
+h3{
+	font-size: 1.6vw;
+}
+
+h4{
+	font-size: 1.2vw;
+}
+
+h5{
+	font-size: 1.0vw;
+}
+
+h6{
+	font-size: 0.8vw;
+}
+ 
+.sem-padding{
+	padding: 0 !important;
+}
+
+.sem-margin{
+	margin: 0 !important;
+}
+
+ul.inline li, ol.inline li{
+	display: inline;
+}
+
+ul.sem-marcador, ol.sem-marcador{
+	list-style: none;
+}
+
+a.botao, input.botao{
+	background: #0B0B61;
+	width: 100%;
+	padding: 1.5vw 0;
+	border-radius: 0.2rem;
+	color: #FFFFFF;
+	cursor: pointer;
+	margin: 0.2vw 0;
+	display: inline-block;
+	border: none;
+	line-height: 0.4;
+}
+
+a.botao:hover, input.botao:hover{
+	background: #315e8a;
+	text-decoration: none;
+}
+
+.fa{
+    padding: 2vh 2vh;
+    width: 2vh;
+    height: 2vh;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover{
+    opacity: 0.7;
+}
+
+.fa-facebook{
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter{
+    background: #55ACEE;
+    color: white;
+}
+
+.menu ul li a.pontos:hover{
+	color: #F78181;
+}

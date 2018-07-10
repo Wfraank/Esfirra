@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<link rel="stylesheet" type="text/css" href="Grid_user.css"/>
+		<link rel="stylesheet" type="text/css" href="login.css"/>
+		<script type="text/javascript" src="js/indicacao.js"></script>
+	</head>
+	<body>
+					<h3>Login</h3><br>
+					<p>Faça seu login e comece a pontuar agora mesmo!</p>
+					<form method="POST">
+						{% csrf_token %}
+						<input type="text" name="login" id="login" placeholder="Login" class="in"/>
+						<input type="text" name="senha" id="senha" placeholder="Senha" class="in"/>
+						<input type="submit" name="enviar" href="index.html" class="botao" value="Entrar"/>
+					</form>
+
+	</body>
+</html>

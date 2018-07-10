@@ -1,10 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+    {% load static %}
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <!-- Title -->
+    <title>
+      {% block title %}AoTorcedor{% endblock %}
+    </title>
 
-</body>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="logo/mao.ico"/>
+
+    <!-- meta -->
+    <meta charset="utf-8"/>
+    <meta name="description" content="Sistema de controle de acesso de torcedores a estádios de futebol"/>
+    <meta name="keywords" content="AoTorcedor, controle de acesso, torcedores, estádios, futebol"/>
+    <meta name="author" content="ESFIRRA"/>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+
+    <!-- Arquivos CSS e Jquery -->
+    <link rel="stylesheet" href="{% static 'website/css/CSS Normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'website/css/Reutilizaveis.css' %}">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="{% static 'ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js' %}"></script>
+
+    <!-- Bloco de Estilos -->
+    {% block styles %}{% endblock %}
+</head>
+    <body>
+        <div class="content">
+        </div>
+        <div class="footer superlinha">
+            <span>&copy; 2018 - AoTorcedor</span>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <br>
+            <p>Dúvidas? Ligue 0800-887-0201</p>
+            <a href="#"><p>Termos de uso</p></a>
+            <a href="#"><p>Declaração de privacidade</p></a>
+        </div>
+    </body>
 </html>

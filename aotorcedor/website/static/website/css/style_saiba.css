@@ -1,0 +1,133 @@
+/*Layout do Site*/
+
+body{
+	height: 101vh;
+	background-image: url("img/soccer.jpg");
+}
+
+.traço{
+	height: 1vh;
+	background: #08088A;
+}
+
+.header{
+	height: 6vh;
+	padding: 0 0;
+	background: rgba(11,11,59,0.4);
+}
+
+.menu{
+	display: inline-block;
+	text-transform: uppercase;
+	text-align: right;
+	font-size: 3vh;
+	float: right;
+	height: 100%;
+}
+
+.menu ul{
+	margin: 1.5vh 0 ;
+}
+
+.menu ul li a{
+	padding: 1.5vh 3vw 1.1vh 3vw;
+	border-radius: 0rem;
+}
+
+.menu ul li a:hover{
+	text-decoration: none;
+	background: #08088A;
+	color: #ebebeb;
+}
+
+.logo{
+	padding: 3vh 0;
+	height: 14vh;
+}
+
+.logo img{
+    height: 14vh;
+    width: auto;
+    display: block;
+	margin: 0 auto;
+}
+
+.cards{
+	height: 50vh;
+	text-align: center;
+}
+
+.card{
+	height: 46vh;
+	width: 45%;
+	margin: 3vh 1.5% 1vh 1.5%;
+	background: rgba(242,245,169,0.8);
+	border-radius: 1rem;
+}
+
+.jogo{
+	background: rgba(254,100,46,0.8);
+}
+
+.imgbola{
+	width: 100%;
+	height: 35%;
+	margin: 0 0;
+	padding: 0 0;
+}
+
+.jogo img{
+	height: 100%;
+	width: auto;
+	margin-left: 0;
+	float: left;
+}
+
+.atencao img{
+	height: 100%;
+	width: auto;
+	margin-left: 0;
+	float: left;
+}
+
+.justify{
+	text-align: justify;
+}
+
+.card form input.in{
+	display: block;
+	width: 100%;
+	border-radius: .25rem;
+	background-color: #FFFFFF;
+	margin: 0.2vw 0;
+	border: 1px solid transparent;
+	line-height: 2;
+	color: #495057;
+	margin: 0.5vh 0;
+}
+
+.seta{
+	padding: 1vh 0;
+	height: 8vh;
+}
+
+.seta img{
+	height: 6vh;
+    width: auto;
+    display: block;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.footer{
+	height: 9vh;
+	padding: 2vh 0;
+	text-align: center;
+	font-weight: 500;
+	background: rgba(11,11,59,0.4);
+}
+
+.footer p{
+	display: inline;
+	margin-right: 3vw;
+}

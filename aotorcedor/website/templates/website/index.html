@@ -1,3 +1,10 @@
+<!-- Estendemos do template base -->
+{% load static %}
+
+<!-- Bloco que define o <title></title> da nossa página -->
+
+<!-- Bloco de conteúdo da nossa página -->
+{% block conteudo %}
 <!DOCTYPE html> <!--   -->
 <html lang="pt-br">
 <head>
@@ -6,38 +13,33 @@
 	<meta name="keywords" content="AoTorcedor, controle de acesso, torcedores, estádios, futebol"/>
 	<meta name="author" content="ESFIRRA"/>
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="CSS Normalize.css"/>
-	<link rel="stylesheet" type="text/css" href="Grid.css"/>
-	<link rel="stylesheet" type="text/css" href="Reutilizaveis.css"/>
-	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/CSS Normalize.css' %}"/>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/Grid.css' %}"/>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/Reutilizaveis.css' %}"/>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="{% static 'js/index.js' %}"></script>
 	<title>AoTorcedor</title>
-	<link rel="shortcut icon" href="logo/mao.ico"/>
+	<link rel="shortcut icon" href="{%static 'logo/mao.ico' %}"/>
 </head>
 <body>
 	<div class="superlinha logo">
-		<img src="img/Logo.png" alt="logo"/>
+		<img src="{% static 'img/Logo.png' %}" alt="logo"/>
 	</div>
 	<div class="linha cards">
 		<div class="ampliar coluna card">
 			<h3>Login</h3><br>
-			<p>Faça seu login e comece a pontuar agora mesmo!</p>
-			<form method="POST" class="" action="menu_user.html">
-				<input type="text" name="login" id="login" placeholder="Login" class="in"/>
-				<input type="text" name="senha" id="senha" placeholder="Senha" class="in"/>
-				<input type="submit" name="enviar" href="menu_user.html" class="botao" value="Entrar"/>
+			<p>Faça seu login e comece a pontuar agora mesmo!Quanto mais pontos, mais descontos!</p>
+			<form method="POST" class="" action="login.html">
+				<input type="submit" name="enviar" href="login.html" class="botao" value="Entrar"/>
 			</form>
 		</div>
 		<div class="ampliar coluna card">
 			<h3>Cadastro</h3><br>
-			<p>Cadastre-se e garanta idas seguras e confortavéis!</p>
+			<p>Cadastre-se e garanta idas seguras e confortavéis!Venha para o AoTorcedor!</p>
 			<form method="POST" class="" action="cadastro.html">
-				<input type="text" name="email" id="email" placeholder="Endereço de Email" class="in"/>
-				<input type="text" name="cidade" id="cidade" placeholder="Cidade" class="in"/>
-				<input type="text" name="estado" id="estado" placeholder="Estado, como PE, SP..." class="in"/>
 				<input type="submit" name="continuar" href="cadastro.html" class="botao" value="Continuar Cadastro"/>
 			</form>
 		</div>
@@ -60,3 +62,6 @@
 	</div>
 </body>
 </html>
+{% endblock %}
+
+
